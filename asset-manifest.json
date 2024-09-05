@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tic-tac-toe-game-using-React/static/css/main.c51df72a.css",
-    "main.js": "/tic-tac-toe-game-using-React/static/js/main.e0bede4f.js",
+    "main.css": "/tic-tac-toe-game-using-React/static/css/main.653f4151.css",
+    "main.js": "/tic-tac-toe-game-using-React/static/js/main.423e3cb8.js",
     "static/js/453.6bda9f2e.chunk.js": "/tic-tac-toe-game-using-React/static/js/453.6bda9f2e.chunk.js",
     "index.html": "/tic-tac-toe-game-using-React/index.html",
-    "main.c51df72a.css.map": "/tic-tac-toe-game-using-React/static/css/main.c51df72a.css.map",
-    "main.e0bede4f.js.map": "/tic-tac-toe-game-using-React/static/js/main.e0bede4f.js.map",
+    "main.653f4151.css.map": "/tic-tac-toe-game-using-React/static/css/main.653f4151.css.map",
+    "main.423e3cb8.js.map": "/tic-tac-toe-game-using-React/static/js/main.423e3cb8.js.map",
     "453.6bda9f2e.chunk.js.map": "/tic-tac-toe-game-using-React/static/js/453.6bda9f2e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51df72a.css",
-    "static/js/main.e0bede4f.js"
+    "static/css/main.653f4151.css",
+    "static/js/main.423e3cb8.js"
   ]
 }
