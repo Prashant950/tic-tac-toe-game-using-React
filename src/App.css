@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffc107;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background-color: #fffae6;
+  border: 3px solid #e2ae60;
+  font-size: 36px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.square:hover {
+  background-color: #fff3e0;
+  transform: scale(1.1);
+}
+
+.square:active {
+  background-color: #ffe0b2;
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #db8b13;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffb74d;
+}
+
+button:active {
+  background-color: #ffa726;
+}
+
+.reset-button {
+  margin-top: 10px;
+  background-color: #ff7043;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  .square {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .game {
+    padding: 20px;
   }
 }
