@@ -2,8 +2,16 @@ import './App.css';
 import { useState } from 'react';
 
 function Square({ value, onSquareClick, isGameStarted }) {
+  function handleClick() {
+    if (!isGameStarted) {
+      window.alert('Before start game please click "Start Game" button');
+      return;
+    }
+    onSquareClick();
+  }
+
   return (
-    <button className="square" onClick={isGameStarted ? onSquareClick : null}>
+    <button className="square" onClick={handleClick}>
       {value}
     </button>
   );
@@ -24,7 +32,7 @@ function Board({ xIsNext, squares, onPlay, isGameStarted }) {
   }
 
   const winner = calculateWinner(squares);
-  const isDraw = squares.every(Boolean); // Check if all squares are filled
+  const isDraw = squares.every(Boolean);
   let status;
   if (winner) {
     status = 'Winner: ' + winner;
@@ -97,21 +105,12 @@ export default function Game() {
     }
   }
 
-  const moves = history.map((squares, move) => {
-    
-    return (
-      <>
-      </>
-    );
-  });
-
   return (
     <div className="game">
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} isGameStarted={isGameStarted} />
       </div>
       <div className="game-info">
-        <ol>{moves}</ol>
         <button className="start-button" onClick={startGame} disabled={isGameStarted}>
           Start Game
         </button>

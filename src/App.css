@@ -19,10 +19,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: #d1c6c6;
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(73, 172, 202, 0.1);
 }
 
 .game-board {
@@ -67,7 +67,7 @@ body {
 .game-info {
   margin-top: 20px;
   font-size: 18px;
-  color: #555;
+  color: white;
 }
 
 ol {
@@ -79,25 +79,32 @@ button {
   margin: 5px;
   border: none;
   border-radius: 5px;
-  background-color: #db8b13;
+  background-color: #811a00;
   cursor: pointer;
   font-size: 16px;
+  
 }
 
 button:hover {
-  background-color: #ffb74d;
+  background-color: #ec0000;
+  
+  
 }
 
 button:active {
-  background-color: #ffa726;
+  background-color: #9b0000;
 }
 
 .reset-button {
   margin-top: 10px;
-  background-color: #ff7043;
+  background-color: #922200;
   color: white;
 }
-
+.start-button {
+  margin-top: 10px;
+  background-color: #922200;
+  color: white;
+}
 @media (max-width: 600px) {
   .square {
     width: 70px;
