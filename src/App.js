@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Square({ value, onSquareClick, isGameStarted }) {
   function handleClick() {
     if (!isGameStarted) {
-      window.alert('Before start game please click "Start Game" button');
+      window.alert('Before start game please click below "Start Game" button');
       return;
     }
     onSquareClick();
